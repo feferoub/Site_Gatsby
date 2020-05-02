@@ -44,9 +44,9 @@ function CardContainer() {
         frontFace={
           <>
             <Database />
-            <h1 style={{ marginTop: 10 }}>
+            <h3 style={{ marginTop: 10 }}>
               <div class="text">Back-end</div>
-            </h1>
+            </h3>
           </>
         }
         backFace={
@@ -70,9 +70,9 @@ function CardContainer() {
         frontFace={
           <>
             <Browser />
-            <h1 style={{ marginTop: 10 }}>
+            <h3 style={{ marginTop: 10 }}>
               <div class="text"> Front-end</div>
-            </h1>
+            </h3>
           </>
         }
         backFace={
@@ -97,9 +97,9 @@ function CardContainer() {
         frontFace={
           <>
             <Network />
-            <h1 style={{ marginTop: 10 }}>
+            <h3 style={{ marginTop: 10 }}>
               <div class="text"> Devops</div>
-            </h1>
+            </h3>
           </>
         }
         backFace={

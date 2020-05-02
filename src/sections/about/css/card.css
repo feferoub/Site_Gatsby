@@ -28,7 +28,7 @@ max-width: 1600px;
 
 }
 
-.card:hover{
+.card:hover:not(.closed){
     height:auto;
     max-height: calc(var(--text-length) / var(--characters-per-line) * 30px + var(--childrens) * 40px + var(--max-height-base));
     margin-top:-100px;
@@ -39,7 +39,7 @@ max-width: 1600px;
         align-items: center;
     }
     .card{width:80%;margin-bottom:5%;}
-    .card:hover{margin-top:0px;    height:auto;
+    .card:hover:not(.closed){margin-top:0px;    height:auto;
         max-height: calc(var(--text-length) / var(--characters-per-line) * 30px + var(--childrens) * 40px + var(--max-height-base));}}
 
 
@@ -67,8 +67,7 @@ max-width: 1600px;
     justify-content: center;
     align-items: center;
     display: flex;
-    padding-bottom: 50px;
-    padding-top: 40px;
+
     flex-direction: column;
     transition: all 0.5s ease-out;
 }
@@ -99,7 +98,7 @@ max-width: 1600px;
   }
 
 
-.card:hover .face1{
+.card:hover:not(.closed) .face1{
     background-color: var(--primary-color);
     box-shadow: var(--primary-color) 0px 0px 2px 2px ,var(--primary-color-dark) 3px 0px 6px
        ,var(--primary-color-light) -3px -3px 6px;
@@ -123,7 +122,7 @@ max-width: 1600px;
     overflow-y: hidden;
 }
 
-.card:hover .face2{
+.card:hover:not(.closed) .face2{
     height:auto;
     max-height: calc(var(--text-length) / var(--characters-per-line) * 30px + var(--childrens) * 40px);
     transition: all 0.3s
