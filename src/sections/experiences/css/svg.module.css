@@ -1,0 +1,12 @@
+.base{
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+}
+
+.animated{
+    animation: dash 1s linear forwards;
+}
+
+@keyframes dash{
+to{stroke-dashoffset: 0;}
+}

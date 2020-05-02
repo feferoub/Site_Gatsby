@@ -1,0 +1,162 @@
+.card_container{
+margin:auto;
+max-width: 1600px;
+      display: flex;
+      justify-content: space-around;
+
+  }
+
+ 
+
+.card{
+    --childrens:0;
+    --children-height:110px;
+    --max-height-base: 250px;
+    --characters-per-line:30;
+    width: 30%;
+    max-height:var(--max-height-base);
+    transition: all 0.3s ease-out;
+    margin-top:0px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 0;
+
+
+}
+
+.card:hover{
+    height:auto;
+    max-height: calc(var(--text-length) / var(--characters-per-line) * 30px + var(--childrens) * 40px + var(--max-height-base));
+    margin-top:-100px;
+}
+
+@media (max-width: 1000px) {
+    .card_container {flex-direction: column;width:100%;
+        align-items: center;
+    }
+    .card{width:80%;margin-bottom:5%;}
+    .card:hover{margin-top:0px;    height:auto;
+        max-height: calc(var(--text-length) / var(--characters-per-line) * 30px + var(--childrens) * 40px + var(--max-height-base));}}
+
+
+
+@media (max-width: 1400px) {
+    .card { --characters-per-line: 25;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .card { --characters-per-line: 8;
+    }
+  }
+
+.card .face1{
+    --primary-color-light:none;
+    --primary-color-dark:none;
+    --height-base:250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width:100%;
+    min-height:var(--height-base);
+    height:var(--height-base);
+    opacity:0.3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    flex-direction: column;
+    transition: all 0.5s ease-out;
+}
+
+
+
+
+  @media (max-width: 1300px) {
+    .card { --max-height-base: 200px;
+    --children-height: 150px;}
+    .card .face1{
+        --height-base:200px;
+    }
+  }
+
+
+@media (min-width: 1700px) {
+    .card { --max-height-base: 300px;
+        --children-height: 100px;}
+    .card .face1{
+        --height-base:300px;
+    }
+  }
+
+  @media (max-width: 1500px) {
+    .card {
+    --children-height: 140px;}
+  }
+
+
+.card:hover .face1{
+    background-color: var(--primary-color);
+    box-shadow: var(--primary-color) 0px 0px 2px 2px ,var(--primary-color-dark) 3px 0px 6px
+       ,var(--primary-color-light) -3px -3px 6px;
+    opacity:1;
+}
+
+.card .face1 .text{
+    color: var(--secondary-color-svg);
+
+}
+
+
+.card .face2{
+    max-height: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    width:100%;
+    overflow-y: hidden;
+}
+
+.card:hover .face2{
+    height:auto;
+    max-height: calc(var(--text-length) / var(--characters-per-line) * 30px + var(--childrens) * 40px);
+    transition: all 0.3s
+     ease-out;
+}
+
+
+.back_container{
+margin-top: 5%;
+width:100%;
+}
+
+
+
+
+.baxck{
+    /* background-image: url(../utils/browser.svg); */
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    width: 100%;
+    height: 200px;
+     background-position-x: center;
+     background-position-y: center; 
+     margin-bottom: 20px;
+     margin-top: 15px;
+}
+
+
+.container2{
+    margin-top:0px;
+    transition: all 0.3s ease-out;
+}
+.container2:hover{
+    margin-top:-100px
+}

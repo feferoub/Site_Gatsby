@@ -1,0 +1,15 @@
+.container {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 5;
+}
+
+.header_item{
+padding-left:2%;
+padding-right:2%;
+color:var(--grey);
+font-size: 2rem;
+}
+

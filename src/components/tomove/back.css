@@ -1,0 +1,30 @@
+
+:root{
+    --rotation:175deg;
+
+}
+
+.container2{
+    background-image: conic-gradient(from var(--rotation), rgb(255, 255, 255),rgb(152, 144, 145),rgb(150, 127, 127),rgb(185, 161, 161));
+
+    /* background-image: conic-gradient(from var(--rotation), #61f5ff, #c313ff,#ff3aca,#ffe036); */
+    /* background-image: conic-gradient(from var(--rotation),rgb(9, 6, 39), rgb(55, 136, 166),#000); */
+}
+
+
+
+.text2{
+    --rotation2:0deg;
+    --rotation3:0deg;
+    --rotation4:120deg;
+    --rotation5: 240deg;
+    --rotation7: 360deg;
+    --rotation8: 1deg;
+
+
+    /* background-image: conic-gradient(from 180deg,#FFFFFF00 var(--rotation2),#61f5ff var(--rotation3), #c313ff var(--rotation4),#ff3aca var(--rotation5),#ffe036 var(--rotation7)); */
+
+    background-image: conic-gradient(from 175deg,#FFFFFF00 var(--rotation2),rgb(255, 255, 255) var(--rotation3), rgb(152, 144, 145) var(--rotation4),rgb(150, 127, 127) var(--rotation5),rgb(185, 161, 161) var(--rotation7));
+    /* background-image: conic-gradient(from 180deg,#FFFFFF00 var(--rotation2),rgb(9, 6, 39) var(--rotation3), rgb(55, 136, 166) var(--rotation4),  #000 var(--rotation7)); */
+}
+/* ,#FFFFFF00 180deg,#FFFFFF00 var(--rotation), */

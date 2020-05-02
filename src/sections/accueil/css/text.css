@@ -1,0 +1,47 @@
+
+.container {
+  padding: 0 0 0 0;
+  height:100vh;
+  background-color: var(--primary-color);
+
+}
+
+nav ul {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-text {
+  color:var(--grey);
+  cursor:context-menu;
+  font-size: 4rem;
+}
+
+.text span {
+  display: inline-block;
+}
+span:hover {
+  color:var(--secondary-color);
+  transition:all .5s;
+}
+
+span.name{
+  color:var(--secondary-color);
+}
+
+span.m-left{
+  margin-left:-10px;
+}
+
+.text p{
+  letter-spacing: 3px;
+  word-spacing: 10px;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .container-text{
+    font-size: 1.5rem;
+}
+}

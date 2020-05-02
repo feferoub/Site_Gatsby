@@ -1,0 +1,29 @@
+.button {
+    background: var(--primary);
+    /* transition: all 10s ease-in-out; */
+}
+
+
+.box-shadow-out {
+    box-shadow: var(--primary) 0px 0px 2px 2px,var(--primary-dark) 4px 4px 8px,  var(--primary-light) -4px -4px 8px;
+}
+
+/* .box-shadow-out:hover {
+    box-shadow: 0 5px 0px 5px;/* box-shadow: var(--primary) inset 0px 0px 2px 2px,var(--primary-dark) inset 4px 4px 8px,  var(--primary-light) inset -4px -4px 8px; */
+
+
+.box-shadow-in {
+    box-shadow: var(--primary) inset 0px 0px 2px 2px,var(--primary-dark) inset 4px 4px 8px,  var(--primary-light) inset -4px -4px 8px;
+}
+
+.buttonClicked {
+    background: var(--primary);
+    border-radius: 10px;
+    animation: 10s box-shadow linear;
+    box-shadow:var(--primary) inset 0px 0px 2px 2px,
+  var(--primary-dark) inset 4px 4px 8px,  
+  var(--primary-light) inset -4px -4px 8px;
+    width: 180px;
+    height: 180px;
+    margin-top: 60px;
+}
