@@ -3,8 +3,10 @@ module.exports = {
     title: `Site Félix Roubaud`,
     description: `Developpeur web fullstack. Expert javascript, je développe avec React/Node/Django `,
     author: `@felixRoubaud`,
+    siteUrl: `https://www.felix-roubaud.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
