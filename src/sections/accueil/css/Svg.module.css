@@ -16,11 +16,12 @@
 .feuille{
 
     width:100px;
-    right:28.5%;
-    top:66%;
+    right:32.5%;
+    top:70%;
 }
 
  .feuille.animation_translationX{
+    --window-width:0;
     animation: translatedX3 7.5s forwards;
 }
 
@@ -69,10 +70,10 @@
                    
    @keyframes translatedX3 {
     from{animation-timing-function: cubic-bezier(.45,-0.01,.64,.99);}
-    33%{transform: translateX(400px);animation-timing-function:cubic-bezier(.59,.01,.66,.99);}
-    66%{transform: translateX(-400px);
+    33%{transform: translateX(calc(var(--window-width) * 1px));animation-timing-function:cubic-bezier(.59,.01,.66,.99);}
+    66%{transform: translateX(calc(var(--window-width) * -1px));
         animation-timing-function:cubic-bezier(.59,.01,.66,.99);}
-    100%{transform: translateX(400px);}
+    100%{transform: translateX(calc(var(--window-width) * 1.35px));}
 
    }  
 

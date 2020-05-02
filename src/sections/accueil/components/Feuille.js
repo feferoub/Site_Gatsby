@@ -11,7 +11,7 @@ function useDocumentScrollThrottled(callback) {
     const { scrollTop: currentScrollTop } =
       document.documentElement || document.body
 
-    setScrollPosition(previousPosition => {
+    setScrollPosition((previousPosition) => {
       previousScrollTop = previousPosition
       return currentScrollTop
     })
@@ -33,7 +33,7 @@ function Svg() {
   const feuilleRefRotate = useRef(null)
   const feuilleRefTranslateX = useRef(null)
   const feuilleRefTranslateY = useRef(null)
-  useDocumentScrollThrottled(async callbackData => {
+  useDocumentScrollThrottled(async (callbackData) => {
     const { currentScrollTop } = callbackData
     if (
       Math.abs(currentScrollTop) > window.innerHeight * 0.1 &&
@@ -42,6 +42,10 @@ function Svg() {
       feuilleRefTranslateY.current.style.setProperty(
         "--window-height",
         window.innerHeight
+      )
+      feuilleRefTranslateX.current.style.setProperty(
+        "--window-width",
+        window.innerWidth / 3.5
       )
       feuilleRefRotate.current.classList.toggle(styles["animation_rotation"])
       feuilleRefTranslateX.current.classList.toggle(
@@ -57,7 +61,7 @@ function Svg() {
     <div
       ref={feuilleRefTranslateY}
       className={styles.feuille}
-      style={{ position: "absolute", zIndex: 20 }}
+      style={{ position: "absolute", zIndex: 20, opacity: 0.8 }}
     >
       <div ref={feuilleRefTranslateX} className={styles.feuille}>
         <div ref={feuilleRefRotate} className={styles.feuille}>
